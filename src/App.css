@@ -1,0 +1,93 @@
+@font-face {
+  font-family: digital-7;
+  src: url(./assets/digital_7/digital-7.ttf);
+}
+
+:root {
+  --digital-clock-diameter: 300px;
+  --second-hand-length: calc(var(--digital-clock-diameter) / 2 - 20px);
+  --minute-hand-length: calc(var(--digital-clock-diameter) / 2.5);
+  --hour-hand-length: calc(var(--digital-clock-diameter) / 4.5);
+  --second-hand-rotation: 15deg;
+  --minute-hand-rotation: 45deg;
+  --hour-hand-rotation: 90deg;
+}
+
+.main {
+  font-family: digital-7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 150px;
+}
+
+.digital-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  font-size: 96px;
+  color: white;
+  background-color: black;
+  max-height: fit-content;
+  position: relative;
+}
+
+.digit-wrapper {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  gap: 1px;
+  padding: 10px 30px 10px 30px;
+}
+
+.digit-box {
+  width: 96px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-inline-end: 1px;
+}
+
+.analog-container {
+  position: relative;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--digital-clock-diameter);
+  height: var(--digital-clock-diameter);
+  background: linear-gradient(to bottom, black 70%, rgb(221, 218, 218) 30%);
+  box-shadow: -15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.analog-clock-hand {
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+}
+
+.second-hand {
+  width: 2px;
+  height: var(--second-hand-length);
+  transform: translate(-50%, -100%) rotate(var(--second-hand-rotation));
+  transform-origin: center 90%;
+}
+
+.minute-hand {
+  width: 4px;
+  height: var(--minute-hand-length);
+  transform: translate(-50%, -100%) rotate(var(--minute-hand-rotation));
+  transform-origin: center 85%;
+}
+
+.hour-hand {
+  width: 6px;
+  height: var(--hour-hand-length);
+  transform: translate(-50%, -100%) rotate(var(--hour-hand-rotation));
+  transform-origin: center 75%;
+}
