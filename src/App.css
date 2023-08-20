@@ -35,19 +35,12 @@
 }
 
 .digit-wrapper {
+  width: 280px;
   margin: auto;
   justify-content: center;
   display: flex;
-  gap: 1px;
+  gap: 3px;
   padding: 10px 30px 10px 30px;
-}
-
-.digit-box {
-  width: 96px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding-inline-end: 1px;
 }
 
 .analog-container {
@@ -69,6 +62,10 @@
   position: absolute;
   left: 50%;
   top: 60%;
+}
+
+.seconds-wrapper {
+  width: 160px;
 }
 
 .second-hand {
