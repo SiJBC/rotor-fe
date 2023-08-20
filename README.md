@@ -1,11 +1,13 @@
 # Rotor Front End Challenge By Simon Colman
 
 ## Project setup
-```Built with vite the modern build tool for scaffolding a react app recommended in the official react docs.```
-```To get started recommend using yarn as the package manager to take advantage of the cached files in .yarn```
+```Bootstrapped with vite the modern build tool for scaffolding a react app recommended in the official react docs.```
 ```yarn```
 ```yarn dev```
 
+
+The project is deployed at  https://rotor-fe.vercel.app/
+The Github repository is at 
 
 
 
